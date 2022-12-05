@@ -1,0 +1,342 @@
+* {
+    margin:0;
+    padding:0;
+}
+html {
+    background-color: #050505;
+    color: #ede7e4;
+    font-family: "Cormorant", Georgia, 'Times New Roman', Times, serif;
+
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 3px;
+    background: #ede7e4;
+
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #050505;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #ede7e4;
+  }
+
+/*      mainpage       */
+
+/*  fade in header    */
+
+.fade-in .mainpage-header,
+.fade-in .header,
+.fade-in a {
+    animation: fadeIn ease 2s;
+    -webkit-animation: fadeIn ease 2s;
+    -moz-animation: fadeIn ease 2s;
+    -o-animation: fadeIn ease 2s;
+    -ms-animation: fadeIn ease 2s;
+  }
+
+ .fade-in h1, 
+ .fade-in h2,
+ .fade-in h3,
+ .fade-in h4,
+ .fade-in p {
+    animation: fadeIn ease 5s;
+    -webkit-animation: fadeIn ease 5s;
+    -moz-animation: fadeIn ease 5s;
+    -o-animation: fadeIn ease 5s;
+    -ms-animation: fadeIn ease 5s;
+  }
+
+  @keyframes fadeIn{
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+ 
+
+
+.mainpage-header {
+    height: 28em;
+    background-image: url("https://i.ibb.co/NVr1XYB/mainpage-header.jpg");
+    padding-top: 3em;
+    padding-bottom: 2em;
+}
+
+
+h1,
+h2 {
+        font-weight: normal;
+}
+
+
+
+.mainpage-header h1 {
+font-family: "Playfair Display SC";
+font-size: 3em;
+margin-top: 0;
+text-align: center;
+}
+
+h2 {
+    font-family: "Cinzel";
+    font-size: 1em;
+    text-align: center;
+}
+
+
+.mainpage-message {
+    width: 80%;
+    margin: auto;
+    margin-bottom: 4em;
+    margin-top: 2em;
+}
+.mainpage-message h3 {
+    font-family: "Cormorant";
+    font-weight: normal;
+    font-style: italic;
+    font-size: 1em;
+    width: 80%;
+    margin:auto;
+    text-align:center;
+}
+
+
+/*  other pages  */
+h3 {
+    font-family: "Cinzel";
+    font-size: 3.5em;
+    font-weight: normal;
+    text-align: center;
+}
+h4 {
+    font-family: "Cinzel";
+    font-weight: normal;
+}
+
+div.other-pages {
+    margin-top: 0em;
+}
+
+
+
+/*   to-sniff page  */
+
+div.to-sniff.header {
+    background-image: url("https://i.ibb.co/cF5rvY7/sniff-designer.jpg");
+    height: 35em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right center;
+}
+div.to-sniff a {
+    font-size: 3.5em;
+    padding-right: 2em;
+    padding-top: 1.5em;
+    display: block;
+    text-align:right;
+    color: #050505;
+    text-decoration: none;
+}
+
+
+div.to-sniff h3:first-of-type {
+    padding-top: 1.5em;
+}
+
+
+
+/* to-sniff designer */
+
+div.to-sniff.wrapper {
+    padding: 4em;
+    overflow:auto;
+}
+div.to-sniff.designer {
+    padding-bottom: 2em;
+}
+
+div.to-sniff.designer h2 {
+    margin-bottom: 1em;
+    font-size:1.2em;
+}
+
+div.to-sniff.designer.house {
+    width:33%;
+    float:left;
+}
+
+div.to-sniff.designer.fragrance{
+    width: 33%;
+    float: left;
+}
+
+div.to-sniff.designer.notes {
+    width: 33%;
+    float: left;
+}
+
+
+/* niche*/
+
+
+
+
+/*  about page  */
+
+div.about.header {
+    height:8em;
+    text-align: center;
+    line-height: 6em;
+}
+
+div.about.page p {
+    margin-top: 2em;
+    position: relative;
+
+}
+div.about.header.image {
+    display: inline-block;
+    
+}
+div.about.description {
+    display:inline-block;
+    position: absolute;
+    margin-top: 2em;
+    margin-left: 8em;
+    margin-right: 8em;
+}
+
+
+
+
+
+/* navigation menu */
+
+
+nav {
+    width: 100%;
+    text-align:center;
+}
+nav ul {
+padding: 0;
+}
+
+nav ul li {
+list-style: none;
+display: inline-block;
+padding: 4em;
+padding-bottom: 1em;
+padding-top:1em;
+
+}
+
+nav ul li a {
+font-family: "Playfair Display SC";
+text-decoration: none;
+color: #ede7e4;
+
+}
+
+/*  dropdown    */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+ 
+  
+  /* The container <div> - needed to position the dropdown content */
+ nav ul li {
+    position: relative;
+ }
+ 
+ 
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #050505;
+    color: #ede7e4;
+    width: 20em;
+    z-index: 1;
+    left: 51%;
+    transform: translateX(-51%);
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: #ede7e4;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: inline-block;
+
+   
+  }
+  
+  .dropdown-content a:hover {
+    font-style:italic;
+
+}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+ 
+  
+  
